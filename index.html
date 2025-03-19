@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переведення коштів</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 20%;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ви впевнені, що хочете отримати кошти?</h1>
+    <button id="confirm-btn">Так</button>
+    <img id="prank-image" class="hidden" src="https://imgur.com/CBgSuhY" alt="Привіт, шахрай!">
+
+    <script>
+        document.getElementById("confirm-btn").addEventListener("click", function() {
+            document.getElementById("confirm-btn").style.display = "none";
+            document.getElementById("prank-image").classList.remove("hidden");
+        });
+    </script>
+</body>
+</html>
